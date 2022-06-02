@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Grand+Hotel&display=swap');
+
 * {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 1%;
 }
 
@@ -9,45 +11,42 @@ body {
     background-size: cover;
     background-size:contain;
     font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Grand Hotel', cursive; */
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Grand Hotel', cursive;
+    font-size: 50px;
     text-align: center;
     background-color: rgba(157, 161, 240, 0.308);   
     backdrop-filter: blur(5px);
 }
 
-table {
-    min-width: 80%;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 10%;
-    padding: 2%;
-    font-size: 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, .15);
+form {
+    background-color: rgba(157, 161, 240, 0.308);    
     backdrop-filter: blur(5px);
+    padding: 1%;
 }
 
-
-#name-input,
-#age-input,
-#gender-input {
-    min-width: 95%;
-    padding: 2px;
-    margin: 3px;
-    width: fit-content;
-}
-
-.img-div {
+.user-label,
+.user-input {
     display: inline;
-    max-height: 20px;
-    border: 1px dotted red;
+    width: 50%;
+    margin: 1%;
 }
 
-img {
-    object-fit: contain;
-    max-height: 10px;
+#first-name-div,
+#last-name-div {
+    display: inline;
+    margin-left: 11%;
 }
 
+input {
+    padding: 0.5%;
+    border-radius: 40px;
+    text-align: center;
+    font-family: 'Grand Hotel', cursive;
+    font-size: .5cm;
+    
+}
