@@ -4,13 +4,50 @@
 }
 
 body {
-    background-color: #f2f2f2;
+    /* background-image: url("../img/trivia.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size:contain;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align: center;
+    background-color: rgba(157, 161, 240, 0.308);   
+    backdrop-filter: blur(5px);
 }
+
+table {
+    min-width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    padding: 2%;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+}
+
+
+#name-input,
+#age-input,
+#gender-input {
+    min-width: 95%;
+    padding: 2px;
+    margin: 3px;
+    width: fit-content;
+}
+
+.img-div {
+    display: inline;
+    max-height: 20px;
+    border: 1px dotted red;
+}
+
+img {
+    object-fit: contain;
+    max-height: 10px;
+}
+

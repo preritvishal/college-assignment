@@ -25,6 +25,112 @@
         Where we will be asking you a series of question and you will be given a score at the end.
     </p>
 
+    <p>
+        But first, Enter these details to get started.
+    </p>
+
+    <!-- table at down side of screen to have user input -->
+    <form action="post">
+
+    
+    <table id="user-data-input">
+        <tr>
+            <td class="first-col">
+                <label for="name-input">Name</label>
+            </td>
+            <td class="second-col">
+                <input type="text" name="user-name-input" id="name-input"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="first-col">
+                <label for="age-input">Age</label>
+            </td>
+            <td class="second-col">
+                <input type="number" name="user-age-input" id="age-input"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="first-col">
+                <label for="gender-input">Gender</label>
+            </td>
+            <td class="second-col">
+                <!-- <div class="second-col-div-gender">
+                    <input type="radio" name="user-gender-input" id="gender-ipnut"/>
+                    Male
+                </div>
+
+                <div class="second-col-div-gender">
+                    <input type="radio" name="user-gender-input" id="gender-ipnut"/> 
+                    <div id="female-icon" class="img-div">
+                        <img src="https://img.icons8.com/ios-filled/20/undefined/female.png" alt="female" id="female-icon-image"/>
+                    </div>
+                </div>
+
+                <div class="second-col-div-gender">
+                    <input type="radio" name="user-gender-input" id="gender-ipnut"/> 
+                    Other   
+                </div> -->
+                
+                <select name="" id="gender-dropdown-list" required="true">
+
+                        <option value="select">
+                            <!-- left black to indicate no selected -->
+                        </option>
+
+                    <option value="male">
+                        Male
+                    </option>
+                    
+                    <option value="female">
+                        Female
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+                </select>
+                
+            </td>
+        </tr>
+
+        <tr>
+            <td class="first-col">
+                <Label for="language-input">Language you love</Label>
+            </td>
+            <td class="second-col">
+                <div class="second-col-div-lang">
+                    <input type="checkbox" id="language-input" checked="true"/>Html
+                </div>
+                
+                <div class="second-col-div-lang">
+                    <input type="checkbox" id="language-input"/>Css
+                </div>
+
+                <div class="second-col-div-lang">
+                    <input type="checkbox" id="language-input"/>JavaScript
+                </div>
+
+                <div class="second-col-div-lang">
+                    <input type="checkbox" id="language-input"/>Python
+                </div>
+
+                <div class="second-col-div-lang">
+                    <input type="checkbox" id="language-input"/>Java
+                </div>
+
+                <div class="second-col-div-lang">
+                    <input type="checkbox" id="language-input"/>C++
+                </div>
+
+            </td>
+        </tr>
+
+    </table>
+</form>
+
 </body>
 
 <link rel="stylesheet" href="./css/mainPageStyle.css"/>
