@@ -31,7 +31,7 @@ body {
     background-size: cover;
     background-size: contain;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/bg-sky.jpg);
+    background-image: url(../img/bg-body.jpg);
     background-size: cover;
 }
 
@@ -54,13 +54,13 @@ p {
 
 #first-screen {
     margin-bottom: 1cm;
-    background-image: url(../img/bg-abstract-1-blurred.jpg);
+    background-image: url(../img/fg-part-1.jpg);
     background-position: center;
 }
 
 #second-screen {
     margin-bottom: 1cm;
-    background-image: url(../img/bg-blur-5-blurred.jpg);
+    background-image: url(../img/fg-part-2.jpg);
     background-position: center;
 }
 
@@ -70,7 +70,7 @@ p {
 
 #third-screen {
     margin-bottom: 1cm;
-    background-image: url(../img/bg-blur-7.jpg);
+    background-image: url(../img/fg-part-3.jpg);
     background-position: center;
 }
 
