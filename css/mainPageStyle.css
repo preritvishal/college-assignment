@@ -14,14 +14,13 @@ font-family: 'Satisfy', cursive;
 /* border and padding to all elements */
 
 * {
-    /* border: 2px solid black; */
+    border: 2px solid black;
     padding: 1%;
 }
 
 html {
     scroll-behavior: smooth;
 }
-
 
 /* body img, will remove later */
 body {
@@ -85,17 +84,30 @@ form {
     padding: 1%;
 }
 
+/* #form-first-row,
+#from-second-row,
+#form-third-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+form div, form div div, form div div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .user-label,
 .user-input {
     font-family: 'Lobster Two', cursive;
     font-size: 25px;
-    display: inline;
-    width: 50%;
-    margin: 1%;
+    /* display: inline; */
+    /* width: 50%;
+    margin: 1%; */
 }
 
-#first-name-div,
+/* #first-name-div,
 #last-name-div,
 #age-div,
 #gender-div {
@@ -103,7 +115,7 @@ form {
     font-size: 25px;
     display: inline;
     margin-left: 11%;
-}
+} */
 
 /* style on all form of inputs */
 input, option, select {
@@ -116,10 +128,10 @@ input, option, select {
 
 input, option, select {
     border-style: hidden;
-}
+} 
 
 /* form second row items */
-#form-second-row {
+/* #form-second-row {
     align-items: center;
 }
 
@@ -133,14 +145,14 @@ input, option, select {
 
 select {
     width: 15%;
-}
+} */
 
 /* form third row items */
-
+/* 
 #form-third-row {
     padding-left: 17%;
 }
 
 #user-email {
     width: 72%
-}
+} */
