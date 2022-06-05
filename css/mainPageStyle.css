@@ -45,6 +45,8 @@ body * {
 
 /* rounded corners, font and blur effect to all paragraphs  */
 p {
+    display: flex;
+    justify-content: center;
     font-family: 'Grand Hotel', cursive;
     font-size: 50px;
     text-align: center;
@@ -52,16 +54,21 @@ p {
     backdrop-filter: blur(5px);
 }
 
-#first-screen {
+
+#first-screen,
+#second-screen,
+#third-screen {
+    height: 93vh;
     margin-bottom: 1cm;
-    background-image: url(../img/fg-part-1.jpg);
     background-position: center;
 }
 
+#first-screen {
+    background-image: url(../img/fg-part-1.jpg);
+}
+
 #second-screen {
-    margin-bottom: 1cm;
     background-image: url(../img/fg-part-2.jpg);
-    background-position: center;
 }
 
 #second-screen>p {
@@ -69,9 +76,7 @@ p {
 }
 
 #third-screen {
-    margin-bottom: 1cm;
     background-image: url(../img/fg-part-3.jpg);
-    background-position: center;
 }
 
 /* next button rotating css */
