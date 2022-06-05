@@ -63,25 +63,71 @@
 
         <!-- input form at down side of screen to have user input -->
         <form action="post">
-            
-            <!-- input first name -->
-            <div id="first-name-div">
-                <div class="user-label">
-                    <label for="user-first-name">First Name</label>
+
+            <div id="form-first-row">
+
+
+                <!-- input first name -->
+                <div id="first-name-div">
+                    <div class="user-label">
+                        <label for="user-first-name">First Name</label>
+                    </div>
+                    <div class="user-input">
+                        <input type="text" id="user-first-name" />
+                    </div>
                 </div>
-                <div class="user-input">
-                    <input type="text" id="user-first-name" />
+
+                <!-- input last name -->
+                <div id="last-name-div">
+                    <div class="user-label">
+                        <label for="user-last-name">Last Name</label>
+                    </div>
+                    <div class="user-input">
+                        <input type="text" id="user-last-name" />
+                    </div>
                 </div>
+
             </div>
 
-            <!-- input last name -->
-            <div id="last-name-div">
-                <div class="user-label">
-                    <label for="user-last-name">Last Name</label>
+            <div id="form-second-row">
+
+                <div id="age-div">
+                    <div class="user-label">
+                        <label for="user-age">Age</label>
+                    </div>
+                    <div class="user-input">
+                        <input type="number" id="uesr-age" />
+                    </div>
                 </div>
-                <div class="user-input">
-                    <input type="text" id="user-last-name" />
+
+                <div id="gender-div">
+                    <div class="user-label">
+                        <label for="user-gender">You are: </label>
+                    </div>
+                    <div class="user-input">
+                        <select name="" id="user-gender">
+                            <option value=""> </option>
+                            <option value="male">Male</option>
+                            <option value="female">female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
                 </div>
+
+            </div>
+
+
+            <div id="form-third-row">
+
+                <div id="email-div">
+                    <div class="user-label">
+                        <label for="user-email">Email</label>
+                    </div>
+                    <div class="user-input">
+                        <input type="text" id="user-email" />
+                    </div>
+                </div>
+
             </div>
 
         </form>

@@ -25,18 +25,23 @@ html {
 
 /* body img, will remove later */
 body {
+
     background-repeat: no-repeat;
     background-size: cover;
     background-size: contain;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* rounded corners, font and blur effect to all paragraphs  */
-p {
+/* everything under body will have rounded corners */
+body * {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+}
+
+/* rounded corners, font and blur effect to all paragraphs  */
+p {
     font-family: 'Grand Hotel', cursive;
     font-size: 50px;
     text-align: center;
@@ -44,16 +49,42 @@ p {
     backdrop-filter: blur(5px);
 }
 
-/* rounded corner, blur effect on form */
+/* next button rotating css */
+/* COPIED FROM https://codepen.io/epjuan21/pen/QyELMw */
+/* modified to some extend to suit the page */
+.next-button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-button img {
+    padding: 20px;
+    display: block;
+    font-size: 100px;
+    transition: all 0.4s ease;
+}
+
+.next-button img:hover {
+    transform: rotateZ(90deg);
+}
+
+#next-icon-normal-1,
+#next-icon-normal-2 {
+    border-radius: 50%;
+    background-color: rgba(157, 161, 240, 0.308);
+    backdrop-filter: blur(5px);
+}
+
+
+/* blur effect on form */
 form {
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     background-color: rgba(157, 161, 240, 0.308);
     backdrop-filter: blur(5px);
     padding: 1%;
 }
+
 
 .user-label,
 .user-input {
@@ -65,7 +96,9 @@ form {
 }
 
 #first-name-div,
-#last-name-div {
+#last-name-div,
+#age-div,
+#gender-div {
     font-family: 'Satisfy', cursive;
     font-size: 25px;
     display: inline;
@@ -73,7 +106,7 @@ form {
 }
 
 /* style on all form of inputs */
-input {
+input, option, select {
     padding: 0.5%;
     border-radius: 40px;
     text-align: center;
@@ -81,30 +114,33 @@ input {
     font-size: .5cm;
 }
 
-/* next button rotating css */
-/* COPIED FROM https://codepen.io/epjuan21/pen/QyELMw */
-/* modified to some extend to suit the page */
-.next-button {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .next-button img {
-    padding: 20px;
-    display: block;
-    font-size: 100px;
-    transition: all 0.4s ease;
-  }
-  
-  .next-button img:hover {
-    transform: rotateZ(90deg);
-  }
+input, option, select {
+    border-style: hidden;
+}
 
-  #next-icon-normal-1,
-  #next-icon-normal-2 {
-    border-radius: 50%;
-    background-color: rgba(157, 161, 240, 0.308);
-    backdrop-filter: blur(5px);
-  }
+/* form second row items */
+#form-second-row {
+    align-items: center;
+}
+
+#age-div {
+    padding-left: 5.9%;
+}
+
+#gender-div {
+    padding-left: 2.3%;
+}
+
+select {
+    width: 15%;
+}
+
+/* form third row items */
+
+#form-third-row {
+    padding-left: 17%;
+}
+
+#user-email {
+    width: 72%
+}
