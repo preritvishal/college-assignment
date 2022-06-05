@@ -9,6 +9,7 @@
 
 <body>
     <div id="first-screen">
+        <!-- first screen with welcome text and proceed to next arrow -->
         <p>
             Welcome
         </p>
@@ -20,9 +21,18 @@
         <p>
             Techno Trivia
         </p>
+
+        <!-- next button, links to next div below it -->
+        <div id="next-1" class="next-button">
+            <a href="#second-screen">
+                <img src="./img/next-icon-normal.png" alt="next-button" id="next-icon-normal-1" />
+            </a>
+        </div>
+
     </div>
 
     <div id="second-screen">
+        <!-- next screen with some tips and warnings and next button -->
         <p>
             Where we will be asking you a series of question
 
@@ -35,9 +45,17 @@
         <p>
             Remember, This in't an art class, There are Wrong Answers, Right Answers, and Unanswered Questions.
         </p>
+
+        <!-- next button that links to form below it -->
+        <div id="next-2" class="next-button">
+            <a href="#third-screen">
+                <img src="./img/next-icon-normal.png" alt="next-button" id="next-icon-normal-2" />
+            </a>
+        </div>
     </div>
 
     <div id="third-screen">
+        <!-- form with basic details and a button to start the quiz -->
 
         <p>
             But first, Enter these details to get started.
@@ -45,6 +63,8 @@
 
         <!-- input form at down side of screen to have user input -->
         <form action="post">
+            
+            <!-- input first name -->
             <div id="first-name-div">
                 <div class="user-label">
                     <label for="user-first-name">First Name</label>
@@ -53,6 +73,8 @@
                     <input type="text" id="user-first-name" />
                 </div>
             </div>
+
+            <!-- input last name -->
             <div id="last-name-div">
                 <div class="user-label">
                     <label for="user-last-name">Last Name</label>
@@ -61,6 +83,7 @@
                     <input type="text" id="user-last-name" />
                 </div>
             </div>
+
         </form>
     </div>
 
