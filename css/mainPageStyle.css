@@ -14,7 +14,7 @@ font-family: 'Satisfy', cursive;
 /* border and padding to all elements */
 
 * {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 1%;
 }
 
@@ -25,10 +25,14 @@ html {
 /* body img, will remove later */
 body {
 
+    padding: 0.1%;
+    margin: 0%;
     background-repeat: no-repeat;
     background-size: cover;
     background-size: contain;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/bg-sky.jpg);
+    background-size: cover;
 }
 
 /* everything under body will have rounded corners */
@@ -46,6 +50,28 @@ p {
     text-align: center;
     background-color: rgba(157, 161, 240, 0.308);
     backdrop-filter: blur(5px);
+}
+
+#first-screen {
+    margin-bottom: 1cm;
+    background-image: url(../img/bg-abstract-1-blurred.jpg);
+    background-position: center;
+}
+
+#second-screen {
+    margin-bottom: 1cm;
+    background-image: url(../img/bg-blur-5-blurred.jpg);
+    background-position: center;
+}
+
+#second-screen>p {
+    font-size: 45px;
+}
+
+#third-screen {
+    margin-bottom: 1cm;
+    background-image: url(../img/bg-blur-7.jpg);
+    background-position: center;
 }
 
 /* next button rotating css */
@@ -84,75 +110,43 @@ form {
     padding: 1%;
 }
 
-/* #form-first-row,
-#from-second-row,
-#form-third-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
+/* form stying */
 form div, form div div, form div div div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+form div div{
+    width: 100%;
+    padding: 0.1%;
+}
+
 .user-label,
 .user-input {
     font-family: 'Lobster Two', cursive;
-    font-size: 25px;
-    /* display: inline; */
-    /* width: 50%;
-    margin: 1%; */
+    font-size: 30px;    
 }
 
-/* #first-name-div,
-#last-name-div,
-#age-div,
-#gender-div {
-    font-family: 'Satisfy', cursive;
-    font-size: 25px;
-    display: inline;
-    margin-left: 11%;
-} */
+.user-label {
+    width: 30%;
+}
 
-/* style on all form of inputs */
-input, option, select {
-    padding: 0.5%;
-    border-radius: 40px;
+#user-first-name,
+#user-last-name,
+#user-email {
+    width: 90%;
+}
+
+input, select, option {
+    width: 50%;
+    border-style: hidden;
     text-align: center;
     font-family: 'Grand Hotel', cursive;
-    font-size: .5cm;
+    font-size: 35px;
 }
 
-input, option, select {
-    border-style: hidden;
-} 
-
-/* form second row items */
-/* #form-second-row {
-    align-items: center;
-}
-
-#age-div {
-    padding-left: 5.9%;
-}
-
-#gender-div {
-    padding-left: 2.3%;
-}
-
-select {
+/* centring email row */
+#email-div .user-label {
     width: 15%;
-} */
-
-/* form third row items */
-/* 
-#form-third-row {
-    padding-left: 17%;
 }
-
-#user-email {
-    width: 72%
-} */
