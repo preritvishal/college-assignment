@@ -14,7 +14,7 @@ font-family: 'Satisfy', cursive;
 /* border and padding to all elements */
 
 * {
-    /* border: 2px solid black; */
+    /* border: 1px solid black; */
     padding: 1%;
 }
 
@@ -46,6 +46,7 @@ body * {
 /* rounded corners, font and blur effect to all paragraphs  */
 p {
     display: flex;
+    margin-bottom: 0.9%;
     justify-content: center;
     font-family: 'Grand Hotel', cursive;
     font-size: 50px;
@@ -192,13 +193,6 @@ button {
     border-style: hidden;
     border-radius: 50%;
 }
-
-/* #next-page button {
-    font-family: 'Grand Hotel', cursive;
-    font-size: 50px;
-    width: 100%;
-    padding: 0.1%; */
-/* } */
 
 #next-submit-button:hover {
     transform: rotate(360deg);
