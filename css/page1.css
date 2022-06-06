@@ -11,8 +11,73 @@ font-family: 'Pacifico', cursive;
 font-family: 'Satisfy', cursive;
 */
 
-/* border and padding for all */
+/* curved corner, border and padding for all */
 * {
     border: 1px solid black;
     padding: 1%;
+    margin: 0.5%; 
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px; 
+    border-bottom-right-radius: 50px; 
+}
+
+/* class for using flexbox  */
+.flex-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+}
+
+/* class for frosted bg */
+.frost-bg {
+    /* background-color: rgba(157, 161, 240, 0.489); */
+    /* 157, 161, 240, 0.308 from main-page-css */
+    background-color: rgba(160, 164, 238, 0.256);
+    backdrop-filter: blur(5px);
+}
+
+/* setting background image */
+body {
+    /* background-image: url(../img-extra/bg-blur-10.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p, button {
+    width: 100%;
+    font-size: 4vh;
+    font-family: 'Pacifico', cursive;
+}
+
+#question-element {
+    height: 100%;
+    width: 50%;
+    font-size: 5vh;
+}
+
+/* removing the underline of link-text */
+a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.answer-para {
+    width: 20%;
+    padding: 1.1%;
+    margin: 1.1%
+}
+
+/* scaling animation on hover */
+.answer-para:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+/* set the button background to transparent */
+button {
+    background-color: rgba(255, 255, 255, 0);
 }

@@ -5,11 +5,75 @@
     <title>
         Question 1
     </title>
-    <link rel="stylesheet" href="../css/page1.css"/>
+    <link rel="stylesheet" href="../css/page1.css" />
 </head>
 
 <body>
-    Page under construction
+
+    <!-- first div which contains question -->
+    <div id="first-screen" class="screen-div flex-group">
+        <p id="question-text" class="flex-group frost-bg">
+            Identify the following html/xhtml elements:
+        </p>
+    </div>
+
+    <!-- this div will contain the question explanation or the elemenet to identify -->
+    <div id="second-screen" class="screen-div flex-group">
+        <p id="question-element-display" class="flex-group frost-bg">
+            <label for="question-element" id="question-element-label" class="flex-group">Write Something: </label>
+            <input type="text" id="question-element" class="flex-group" />
+        </p>
+    </div>
+
+    <!-- this div will have 4 option or a text input to recieve answer -->
+    <div id="third-screen" class="screen-div flex-group">
+
+        <!-- each button is wrapper under a paragaph, which had a link on it, which
+        may be removed later, then comes the actual button with text as options -->
+        <p class="answer-para flex-group frost-bg">
+            <a href="http://">
+                <button type="button" id="answer-button-1" class="answer-button flex-group">
+                    DropDown List
+                </button>
+            </a>
+        </p>
+        <p class="answer-para flex-group frost-bg">
+            <a href="http://">
+                <button type="button" id="answer-button-2" class="answer-button flex-group">
+                    Text Input
+                </button>
+            </a>
+        </p>
+        <p class="answer-para flex-group frost-bg">
+            <a href="http://">
+                <button type="button" id="answer-button-3" class="answer-button flex-group">
+                    UnOrdered List
+                </button>
+            </a>
+        </p>
+        <p class="answer-para flex-group frost-bg">
+            <a href="http://">
+                <button type="button" id="answer-button-4" class="answer-button flex-group">
+                    Paragraph
+                </button>
+            </a>
+        </p>
+
+    </div>
+
+    <!-- this div will show progress and user score -->
+
+    <div id="fourth-screen" class="screen-div flex-group">
+        
+        <div id="user-score" class="flex-group frost-bg">
+
+        </div>
+
+        <div id="progress-bar" class="flex-group frost-bg">
+
+        </div>
+
+    </div>
 </body>
 
 </html>
