@@ -6,70 +6,86 @@
         Question 1
     </title>
     <link rel="stylesheet" href="../css/page1.css" />
+    <script src="../js/page1.js"></script>
 </head>
 
 <body>
 
-    <!-- first div which contains question -->
-    <div id="first-screen" class="screen-div flex-group">
-        <p id="question-text" class="flex-group frost-bg">
-            Identify the following html/xhtml elements:
-        </p>
-    </div>
+    <div id="outer-div">
 
-    <!-- this div will contain the question explanation or the elemenet to identify -->
-    <div id="second-screen" class="screen-div flex-group">
-        <p id="question-element-display" class="flex-group frost-bg">
-            <label for="question-element" id="question-element-label" class="flex-group">Write Something: </label>
-            <input type="text" id="question-element" class="flex-group" />
-        </p>
-    </div>
 
-    <!-- this div will have 4 option or a text input to recieve answer -->
-    <div id="third-screen" class="screen-div flex-group">
+        <!-- first div which contains question -->
+        <div id="first-screen" class="screen-div flex-group">
+            <p id="question-text" class="flex-group frost-bg">
+                Identify the following html/xhtml elements:
+            </p>
+        </div>
 
-        <!-- each button is wrapper under a paragaph, which had a link on it, which
+        <!-- this div will contain the question explanation or the elemenet to identify -->
+        <div id="second-screen" class="screen-div flex-group">
+            <p id="question-element-display" class="flex-group frost-bg">
+                <label for="question-element" id="question-element-label" class="flex-group"> </label>
+                <input type="text" id="question-element" class="flex-group" placeholder="text" />
+            </p>
+        </div>
+
+        <!-- this div will have 4 option or a text input to recieve answer -->
+        <div id="third-screen" class="screen-div flex-group">
+
+            <!-- each button is wrapper under a paragaph, which had a link on it, which
         may be removed later, then comes the actual button with text as options -->
-        <p class="answer-para flex-group frost-bg">
-            <a href="http://">
-                <button type="button" id="answer-button-1" class="answer-button flex-group">
+            <p id="answer-para-1" class="answer-para frost-bg">
+                <button type="button" id="answer-button-1" class="answer-button" onclick="changeColor(answer-para-1, red)">
                     DropDown List
                 </button>
-            </a>
-        </p>
-        <p class="answer-para flex-group frost-bg">
-            <a href="http://">
-                <button type="button" id="answer-button-2" class="answer-button flex-group">
+            </p>
+            <p id="answer-para-2" class="answer-para frost-bg">
+                <button type="button" id="answer-button-2" class="answer-button" onclick="alert(2)">
                     Text Input
                 </button>
-            </a>
-        </p>
-        <p class="answer-para flex-group frost-bg">
-            <a href="http://">
-                <button type="button" id="answer-button-3" class="answer-button flex-group">
+            </p>
+            <p id="answer-para-3" class="answer-para frost-bg">
+                <button type="button" id="answer-button-3" class="answer-button" onclick="incorrect(answer-para-3)">
                     UnOrdered List
                 </button>
-            </a>
-        </p>
-        <p class="answer-para flex-group frost-bg">
-            <a href="http://">
-                <button type="button" id="answer-button-4" class="answer-button flex-group">
+            </p>
+            <p id="answer-para-4" class="answer-para frost-bg">
+                <button type="button" id="answer-button-4" class="answer-button" onclick="incorrect(answer-para-4)">
                     Paragraph
                 </button>
-            </a>
-        </p>
-
-    </div>
-
-    <!-- this div will show progress and user score -->
-
-    <div id="fourth-screen" class="screen-div flex-group">
-        
-        <div id="user-score" class="flex-group frost-bg">
+            </p>
 
         </div>
 
-        <div id="progress-bar" class="flex-group frost-bg">
+        <!-- this div will show progress and user score -->
+
+        <div id="fourth-screen" class="screen-div flex-group">
+
+            <div id="page-hint" class="flex-group frost-bg bottom-bar">
+                <p id="hint-text">
+                    Hint:
+                </p>
+                <p id="hint-para">
+                    The box can be used to write anything, usually name or adress.
+                </p>
+            </div>
+
+            <div id="page-skip" class="flex-group frost-bg bottom-bar">
+                <button type="button" id="page-skip" onclick="goToPage(2)">
+                    <img src="../img/next-icon.png" alt="skip-this-question" id="skip-button"/>
+                </button>
+            </div>
+
+            <div id="next-page" class="flex-group frost-bg bottom-bar ">
+                <!-- submit button to proceed to next page -->
+                    <button type="button" id="next-page" onclick="goToPage(2)">
+                        <img src="../img/submit-tick.png" alt="next-icon-normal-3" id="next-submit-button" />
+                    </button>
+            </div>
+
+            <!-- <div id="progress-bar" class="flex-group frost-bg bottom-bar">
+                progress bar
+            </div> -->
 
         </div>
 
