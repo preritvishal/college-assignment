@@ -6,6 +6,11 @@
         Techno Trivia
     </title>
     <link rel="stylesheet" href="./css/mainPageStyle.css" />
+    <script>
+        function setBackground() {
+            dom.button.backgroundImage = "url('./img/submit-tick.png')";
+        }
+    </script>
 </head>
 
 <body>
@@ -134,15 +139,15 @@
         </form>
 
         <!-- submit button to proceed to next page -->
-        <div class="next-button">
-            <a href="./src/page1.xhtml">next page</a>
+        <div id="next-page" class="next-button">
+            <a href="./src/page1.xhtml">
+                <button type="button" onmouseenter="changeBackground()">
+                    <img src="./img/next-icon.png" alt="next-icon-normal-3" id="next-submit-button"/>
+                </button>
+            </a>
         </div>
     </div>
 
 </body>
-
-
-<!-- Linked the CSS at end so that any error with css won't
-    stop page bare bones from loading -->
 
 </html>
