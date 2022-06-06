@@ -1,6 +1,8 @@
 # ignored folder
-img-extra/
+im`g-extra/
 .vscode/
-text.*
+
+# excluse text.* file from all folders
+**/test.*
 
 
