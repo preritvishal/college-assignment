@@ -11,8 +11,9 @@
 
 <body>
 
+    <!-- div to differentiate between body and main content
+        will have different background to add beauty -->
     <div id="outer-div">
-
 
         <!-- first div which contains question -->
         <div id="first-screen" class="screen-div flex-group">
@@ -32,35 +33,38 @@
         <!-- this div will have 4 option or a text input to recieve answer -->
         <div id="third-screen" class="screen-div flex-group">
 
-            <!-- each button is wrapper under a paragaph, which had a link on it, which
-        may be removed later, then comes the actual button with text as options -->
+            <!-- each button is wrapper under a paragaph, then comes the 
+                actual button with text as options -->
             <p id="answer-para-1" class="answer-para frost-bg">
-                <button type="button" id="answer-button-1" class="answer-button" onclick="changeColor(answer-para-1, red)">
+                <button type="button" id="answer-button-1" class="answer-button" onclick="alert(incorrect)">
                     DropDown List
                 </button>
             </p>
+
             <p id="answer-para-2" class="answer-para frost-bg">
-                <button type="button" id="answer-button-2" class="answer-button" onclick="alert(2)">
+                <button type="button" id="answer-button-2" class="answer-button" onclick="alert(correct)">
                     Text Input
                 </button>
             </p>
+            
             <p id="answer-para-3" class="answer-para frost-bg">
-                <button type="button" id="answer-button-3" class="answer-button" onclick="incorrect(answer-para-3)">
+                <button type="button" id="answer-button-3" class="answer-button" onclick="alert(incorrect)">
                     UnOrdered List
                 </button>
             </p>
+            
             <p id="answer-para-4" class="answer-para frost-bg">
-                <button type="button" id="answer-button-4" class="answer-button" onclick="incorrect(answer-para-4)">
+                <button type="button" id="answer-button-4" class="answer-button" onclick="alert(incorrect)">
                     Paragraph
                 </button>
             </p>
 
         </div>
 
-        <!-- this div will show progress and user score -->
-
+        <!-- this div will show hint, skip and next button -->
         <div id="fourth-screen" class="screen-div flex-group">
 
+            <!-- hint section, hint will be blurred by default -->
             <div id="page-hint" class="flex-group frost-bg bottom-bar">
                 <p id="hint-text">
                     Hint:
@@ -71,6 +75,7 @@
             </div>
 
             <div id="page-skip" class="flex-group frost-bg bottom-bar">
+                <!-- skip button to skip to next page -->
                 <button type="button" id="page-skip" onclick="goToPage(2)">
                     <img src="../img/next-icon.png" alt="skip-this-question" id="skip-button"/>
                 </button>
@@ -82,10 +87,6 @@
                         <img src="../img/submit-tick.png" alt="next-icon-normal-3" id="next-submit-button" />
                     </button>
             </div>
-
-            <!-- <div id="progress-bar" class="flex-group frost-bg bottom-bar">
-                progress bar
-            </div> -->
 
         </div>
 
