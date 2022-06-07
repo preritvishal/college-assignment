@@ -1,0 +1,145 @@
+/* link to import the fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Grand+Hotel&family=Lobster&family=Lobster+Two&family=Pacifico&family=Satisfy&display=swap');
+/*
+Use:  
+font-family: 'Cookie', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Grand Hotel', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Satisfy', cursive;
+*/
+
+/* curved corner, border and padding for all */
+* {
+    /* border: 1px solid black; */
+    padding: 1%;
+    margin: 0.5%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* class for using flexbox  */
+.flex-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* class for frosted bg */
+.frost-bg {
+    /* background-color: rgb    a(157, 161, 240, 0.489); */
+    /* 157, 161, 240, 0.308 from main-page-css */
+    background-color: rgba(131, 204, 192, 0.57);
+    backdrop-filter: blur(5px);
+}
+
+/* setting background image */
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+#outer-div {
+    /* background-color: rgba(176, 232, 143, 0.585); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p,
+button {
+    width: 100%;
+    font-size: 4vh;
+    font-family: 'Pacifico', cursive;
+}
+
+p:hover,
+.bottom-bar:hover {
+    background-color: rgba(125, 234, 216, 0.57);
+}
+
+#question-element {
+    height: 100%;
+    width: 50%;
+    font-size: 5vh;
+}
+
+#third-screen {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.answer-para {
+    width: 18vw;
+    padding: 1.1%;
+    margin: 1.1%
+}
+
+/* scaling animation on hover */
+.answer-para:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+/* set the button background to transparent */
+button {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.bottom-bar {
+    width: 100%;
+}
+
+/* setting input bg transparent */
+input {
+    border-radius: 0%;
+    background-color: rgba(252, 252, 252, 0.493);
+}
+
+/* next page css */
+#next-page,
+#page-skip {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11%;
+}
+
+button {
+    border-style: hidden;
+    border-radius: 50%;
+}
+
+#next-submit-button:hover,
+#skip-button:hover {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+
+/* hint box css */
+#page-hint {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+#hint-text {
+    width: auto;
+}
+
+#hint-para {
+    filter: blur(5px);
+}
+
+#hint-para:hover {
+    transition-duration: 1s;
+    filter: blur(0px);
+}
