@@ -96,8 +96,10 @@ button {
     width: 100%;
 }
 
-/* setting input bg transparent */
-input {
+/* setting question element and its child bg of similar color */
+/* question-element is the id of question item, and question-entities
+        is a class to be given to if question item has child */
+#question-element, .question-entities { 
     border-radius: 0%;
     background-color: rgba(252, 252, 252, 0.493);
 }
