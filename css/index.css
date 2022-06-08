@@ -1,0 +1,203 @@
+/* link to import the fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Grand+Hotel&family=Lobster&family=Lobster+Two&family=Pacifico&family=Satisfy&display=swap');
+/*
+Use:  
+font-family: 'Cookie', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Grand Hotel', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Satisfy', cursive;
+*/
+
+/* border and padding to all elements */
+
+* {
+    /* border: 1px solid black; */
+    /* display: flex;
+    flex-direction: column; */
+    padding: 1%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* body img, will remove later */
+body {
+
+    padding: 0.1%;
+    margin: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/bg-body.jpg);
+    background-size: cover;
+}
+
+/* everything under body will have rounded corners */
+body * {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* rounded corners, font and blur effect to all paragraphs  */
+p {
+    display: flex;
+    margin-bottom: 0.9%;
+    justify-content: center;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(157, 161, 240, 0.308);
+    /* background-color: rgba(222, 223, 254, 0.419); */
+    backdrop-filter: blur(5px);
+}
+
+p:hover {
+    cursor: default;
+    transform: scale(1.03);
+    transition-duration: 0.5s;
+}
+
+
+#first-screen,
+#second-screen,
+#third-screen {
+    height: 93vh;
+    margin-bottom: 1cm;
+    background-position: center;
+}
+
+#first-screen {
+    background-image: url(../img/fg-part-1.jpg);
+}
+
+#second-screen {
+    background-image: url(../img/fg-part-2.jpg);
+}
+
+#second-screen>p {
+    font-size: 45px;
+}
+
+#third-screen {
+    background-image: url(../img/fg-part-3.jpg);
+}
+
+/* next button rotating css */
+/* COPIED FROM https://codepen.io/epjuan21/pen/QyELMw */
+/* modified to some extend to suit the page */
+.next-button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-button img {
+    padding: 20px;
+    display: block;
+    font-size: 100px;
+    transition: all 0.4s ease;
+}
+
+.next-button img:hover {
+    transform: rotateZ(90deg);
+}
+
+#next-icon-normal-1,
+#next-icon-normal-2 {
+    border-radius: 50%;
+    background-color: rgba(157, 161, 240, 0.308);
+    backdrop-filter: blur(5px);
+}
+
+
+/* blur effect on form */
+form {
+    background-color: rgba(157, 161, 240, 0.308);
+    backdrop-filter: blur(5px);
+    padding: 1%;
+}
+
+/* form stying */
+form div,
+form div div,
+form div div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form div div {
+    width: 100%;
+    padding: 0.1%;
+}
+
+.user-label,
+.user-input {
+    font-family: 'Lobster Two', cursive;
+    font-size: 30px;
+}
+
+.user-label {
+    width: 30%;
+}
+
+#user-first-name,
+#user-last-name,
+#user-email {
+    width: 90%;
+}
+
+input,
+select,
+option {
+    width: 50%;
+    border-style: hidden;
+    text-align: center;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 35px;
+}
+
+label:hover,
+select:hover,
+input:hover,
+option:hover {
+    cursor: default;
+    transform: scale(1.07);
+    transition-duration: 0.5s;
+}
+
+option {
+    background-color: rgba(157, 161, 240, 0.308);
+    backdrop-filter: blur(5px);
+}
+
+/* centring email row */
+#email-div .user-label {
+    width: 15%;
+}
+
+/* next page css */
+#next-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: rgba(157, 161, 240, 0.308);
+    backdrop-filter: blur(5px);
+    border-style: hidden;
+    border-radius: 50%;
+}
+
+#next-submit-button:hover {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
