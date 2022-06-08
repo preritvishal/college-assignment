@@ -2,7 +2,7 @@
 This website is a small interactive quiz about xhtml
 
 
-The author of this project may not be brightest in wev-dev, or front-end designing,
+The author of this project may not be brightest in web-dev, or front-end designing,
 but has honesty, dedication and learning attitude as counterweight.
 
 
