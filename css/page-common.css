@@ -105,13 +105,12 @@ button {
 }
 
 /* next page css */
-#next-page,
 #page-skip {
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 11%;
+    width: 9%;
 }
 
 button {
