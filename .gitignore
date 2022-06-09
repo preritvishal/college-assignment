@@ -3,6 +3,6 @@ img-extra/
 .vscode/
 
 # excluse text.* file from all folders
-**/test.*
+**/test*.*
 
 
