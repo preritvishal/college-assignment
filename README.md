@@ -9,17 +9,21 @@ but has honesty, dedication and learning attitude as counterweight.
 
 Hence, This project is made with collaboration of:
 
-	0. VS Code intellisense
+	> VS Code intellisense
 
-	1. Github co-pilot
+	> Github co-pilot
 
-	2. Some random site which provide free css design
+	> Some random site which provide free css design
 
-	3. Some UI/UX instagram pages I followed for such just-in-case scenario
+	> Some UI/UX instagram pages I followed for such just-in-case scenario
 
-	4. FOSS icon and wallpaper sites such as icon8 and unsplash
+	> FOSS icon and wallpaper sites such as icon8 and unsplash
 
-	5. Lets-try-this-and-hope-it-works
+	> Lets-try-this-and-hope-it-works
 
-	6. Hopes and prayers
+	> Hopes and prayers
 
+
+To add anything to gitignore, simply add "depricated-" before it's file name, it will not be tracked
+
+Any page name starting with test will also not be tracked, as they will only be used by programmer from testing small pieces of code.
