@@ -12,19 +12,49 @@ font-family: 'Satisfy', cursive;
 */
 
 /* curved corner, border and padding for all */
-* {
+body,
+body * {
     /* border: 1px solid black; */
     padding: 1%;
     margin: 0.5%;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-left-radius: 6vh;
+    border-top-right-radius: 6vh;
+    border-bottom-left-radius: 6vh;
+    border-bottom-right-radius: 6vh;
+}
+
+body {
+    margin: 0%;
+    padding: 2vh;
+
+    background-image: url(../img/page1-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* change the body foreground
+    or the panel in front of body */
+#outer-div {
+    height: 90vh;
+    background-image: url(../img/fg-part-3.jpg);
+    background-repeat: no-repeat;
+}
+
+/* first two para have full length */
+#question-text,
+#question-element-display {
+    width: 100%;
+    font-size: calc(5vh - 5%);
+}
+
+#question-text {
+    font-size: calc(40px * 3vw);
 }
 
 /* class for using flexbox  */
 .flex-group {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -32,53 +62,48 @@ font-family: 'Satisfy', cursive;
 
 /* class for frosted bg */
 .frost-bg {
-    /* background-color: rgb    a(157, 161, 240, 0.489); */
-    /* 157, 161, 240, 0.308 from main-page-css */
-    background-color: rgba(131, 204, 192, 0.57);
+    background-color: rgba(233, 227, 240, 0.57);
     backdrop-filter: blur(5px);
 }
 
-/* setting background image */
-body {
-    margin: 0%;
-    padding: 0%;
+button {
+    font-family: 'Courgette', cursive;
+    font-size: 2vh;
 }
 
-#outer-div {
-    /* background-color: rgba(176, 232, 143, 0.585); */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.screen-div {
+    margin-top: 1.3vw;
 }
 
 p,
-button {
-    width: 100%;
-    font-size: 4vh;
-    font-family: 'Pacifico', cursive;
-}
-
-p:hover,
-.bottom-bar:hover {
-    background-color: rgba(125, 234, 216, 0.57);
+#question-element {
+    font-family: 'Lobster Two', cursive;
+    font-size: 2vw;
 }
 
 #question-element {
-    height: 100%;
-    width: 50%;
-    font-size: 5vh;
+    background-color: rgba(235, 234, 237, 0.57);
 }
 
+/* Width to make them responsive */
+/* full width to outer para and appropriate width to inner */
+
 #third-screen {
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* question element as normal as possible */
+#question-element,
+#question-element * {
+    width: 50%;
+    height: 100%;
+    border-radius: 0%;
 }
 
 .answer-para {
-    width: 18vw;
-    padding: 1.1%;
-    margin: 1.1%
+    margin: 1%;
+    width: calc(40vh - 2%);
+    height: 6vh;
 }
 
 /* scaling animation on hover */
@@ -87,53 +112,58 @@ p:hover,
     transition-duration: 0.5s;
 }
 
+/* answer button height width */
+.answer-button {
+    margin: 0.5%;
+    width: calc(40vh - 10%);
+    height: calc(4vh);
+    font-size: calc(4vh - 5%);
+}
+
 /* set the button background to transparent */
 button {
     background-color: rgba(255, 255, 255, 0);
+    border-style: none;
 }
 
+/* effect on hovering over items */
+p:hover,
+.bottom-bar:hover {
+    background-color: rgba(241, 217, 253, 0.719);
+}
+
+
+/* last div, hint and skip css */
+#fourth-screen,
 .bottom-bar {
-    width: 100%;
+    justify-content: space-evenly;
+
 }
 
-/* setting question element and its child bg of similar color */
-/* question-element is the id of question item, and question-entities
-        is a class to be given to if question item has child */
-#question-element, .question-entities { 
-    border-radius: 0%;
-    background-color: rgba(252, 252, 252, 0.493);
+#page-hint {
+    width: 145vh;
 }
 
-/* next page css */
+#hint-text,
+#hint-para {
+    font-size: calc(3.5vh - 5%);
+}
+
 #page-skip {
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 9%;
+    width: 30vh;
 }
 
-button {
-    border-style: hidden;
-    border-radius: 50%;
+#page-skip-text {
+    font-size: calc(3.5vh - 5%);
 }
 
-#next-submit-button:hover,
+#skip-button {
+    height: 4vw;
+}
+
 #skip-button:hover {
     transform: rotate(360deg);
     transition-duration: 0.5s;
-}
-
-/* hint box css */
-#page-hint {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-}
-
-#hint-text {
-    width: auto;
 }
 
 #hint-para {
