@@ -4,5 +4,4 @@ img-extra/
 
 # excluse text.* file from all folders
 **/test*.*
-
-
+**/depricated*.*
