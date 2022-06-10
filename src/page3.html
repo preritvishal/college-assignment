@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
-        Question 1
+        Question 3
     </title>
 
     <!-- link the common css first -->
@@ -28,14 +28,14 @@
         <!-- first div which contains question -->
         <div id="first-screen" class="screen-div flex-group">
             <p id="question-text" class="flex-group frost-bg">
-                Q1. Identify the following html element:
+                Q3. identify the piece of code below:
             </p>
         </div>
 
         <!-- this div will contain the question explanation or the elemenet to identify -->
         <div id="second-screen" class="screen-div flex-group">
             <p id="question-element-display" class="flex-group frost-bg">
-                <input type="text" id="question-element" class="flex-group" placeholder="text">
+                &lt;button type="submit"> Submit &lt;/button>
             </p>
         </div>
 
@@ -44,27 +44,27 @@
 
             <!-- each button is wrapper under a paragaph, then comes the 
                 actual button with text as options -->
-            <p id="answer-para-1" class="answer-para frost-bg flex-group">
-                <button type="button" id="answer-button-1" class="answer-button flex-group" onclick="incorrect()">
+            <p id="answer-para-1" class="answer-para frost-bg">
+                <button type="button" id="answer-button-1" class="answer-button" onclick="incorrect()">
+                    Button
+                </button>
+            </p>
+
+            <p id="answer-para-2" class="answer-para frost-bg">
+                <button type="button" id="answer-button-2" class="answer-button" onclick="incorrect()">
+                    Reset Button
+                </button>
+            </p>
+
+            <p id="answer-para-3" class="answer-para frost-bg">
+                <button type="button" id="answer-button-3" class="answer-button" onclick="correct()">
+                    Submit Button
+                </button>
+            </p>
+
+            <p id="answer-para-4" class="answer-para frost-bg">
+                <button type="button" id="answer-button-4" class="answer-button" onclick="incorrect()">
                     DropDown List
-                </button>
-            </p>
-
-            <p id="answer-para-2" class="answer-para frost-bg  flex-group">
-                <button type="button" id="answer-button-2" class="answer-button  flex-group" onclick="correct()">
-                    Text Input
-                </button>
-            </p>
-
-            <p id="answer-para-3" class="answer-para frost-bg  flex-group">
-                <button type="button" id="answer-button-3" class="answer-button  flex-group" onclick="incorrect()">
-                    UnOrdered List
-                </button>
-            </p>
-
-            <p id="answer-para-4" class="answer-para frost-bg  flex-group">
-                <button type="button" id="answer-button-4" class="answer-button  flex-group" onclick="incorrect()">
-                    Paragraph
                 </button>
             </p>
 
@@ -79,7 +79,7 @@
                     Hint:
                 </p>
                 <p id="hint-para">
-                    The box can be used to write anything, usually name or address.
+                    Buttons, have a type, just like we do, clicking is universal
                 </p>
             </div>
 
