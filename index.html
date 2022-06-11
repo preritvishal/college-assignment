@@ -16,102 +16,105 @@
 <body>
     <div id="first-screen">
         <!-- first screen with welcome text and proceed to next arrow -->
-        <p>
+        <p class="frost-bg text-para  flex-container">
             Welcome
         </p>
 
-        <p>
+        <p class="frost-bg text-para flex-container">
             To
         </p>
 
-        <p>
+        <p class="frost-bg text-para flex-container">
             Techno Trivia
         </p>
 
         <!-- next button, links to next div below it -->
-        <div id="next-1" class="next-button">
-            <a href="#second-screen">
-                <img src="./img/next-icon.png" alt="next-button" id="next-icon-normal-1" />
-            </a>
+        <div id="next-1" class="next-button next-button-div flex-container">
+            <button type="button" class="next-button-button frost-bg flex-container">
+                <a href="#second-screen">
+                    <img src="./img/next-icon.png" id="next-icon-normal-1" class="next-button-img">
+                </a>
+            </button>
         </div>
 
     </div>
 
     <div id="second-screen">
         <!-- next screen with some tips and warnings and next button -->
-        <p>
+        <p class="frost-bg text-para flex-container">
             Where we will be asking you a series of question
 
         </p>
 
-        <p>
+        <p class="frost-bg text-para flex-container">
             You will be given a score at the end.
         </p>
 
-        <p>
+        <p class="frost-bg text-para flex-container">
             Remember, This isn't an art class, There are Wrong Answers, Right Answers, and Unanswered Questions.
         </p>
 
         <!-- next button that links to form below it -->
-        <div id="next-2" class="next-button">
-            <a href="#third-screen">
-                <img src="./img/next-icon.png" alt="next-button" id="next-icon-normal-2" />
-            </a>
+        <div id="next-2" class="next-button next-button-div flex-container">
+            <button type="button" class="next-button-button frost-bg flex-container">
+                <a href="#third-screen">
+                    <img src="./img/next-icon.png" id="next-icon-normal-2" class="next-button-img">
+                </a>
+            </button>
         </div>
     </div>
 
     <div id="third-screen">
         <!-- form with basic details and a button to start the quiz -->
 
-        <p>
+        <p class="frost-bg text-para flex-container">
             But first, Enter these details to get started.
         </p>
 
         <!-- input form at down side of screen to have user input -->
-        <form action="post">
+        <form action="post" class="frost-bg">
 
-            <div id="form-first-row">
-
+            <div id="form-first-row" class="flex-container form-div">
 
                 <!-- input first name -->
-                <div id="first-name-div">
-                    <div class="user-label">
+                <div id="first-name-div" class="flex-container form-div-inner">
+                    <div class="user-label flex-container">
                         <label for="user-first-name">First Name</label>
                     </div>
-                    <div class="user-input">
+                    <div class="user-input flex-container">
                         <input type="text" id="user-first-name" />
                     </div>
                 </div>
 
                 <!-- input last name -->
-                <div id="last-name-div">
-                    <div class="user-label">
+                <div id="last-name-div" class="flex-container form-div-inner">
+                    <div class="user-label flex-container">
                         <label for="user-last-name">Last Name</label>
                     </div>
-                    <div class="user-input">
+                    <div class="user-input flex-container">
                         <input type="text" id="user-last-name" />
                     </div>
                 </div>
 
             </div>
 
-            <div id="form-second-row">
+            <div id="form-second-row" class="flex-container form-div">
 
-                <div id="age-div">
-                    <div class="user-label">
+                <div id="age-div" class="flex-container form-div-inner">
+                    <div class="user-label flex-container">
                         <label for="user-age">Age</label>
                     </div>
-                    <div class="user-input">
+                    <div class="user-input flex-container">
                         <input type="number" id="user-age" />
                     </div>
                 </div>
 
-                <div id="gender-div">
-                    <div class="user-label">
+                <div id="gender-div" class="flex-container form-div-inner">
+                    <div class="user-label flex-container">
                         <label for="user-gender">You are: </label>
                     </div>
-                    <div class="user-input">
-                        <select name="" id="user-gender">
+                    <div class="user-input flex-container">
+                        <select name="" id="user-gender" class="flex-container">
                             <option value=""> </option>
                             <option value="male">Male</option>
                             <option value="female">female</option>
@@ -123,14 +126,23 @@
             </div>
 
 
-            <div id="form-third-row">
+            <div id="form-third-row" class="flex-container form-div">
 
-                <div id="email-div">
-                    <div class="user-label">
+                <div id="email-div" class="flex-container form-div-inner">
+                    <div class="user-label flex-container">
                         <label for="user-email">Email</label>
                     </div>
-                    <div class="user-input">
+                    <div class="user-input flex-container">
                         <input type="email" id="user-email" />
+                    </div>
+                </div>
+
+                <div id="phone-div" class="flex-container form-div-inner">
+                    <div class="user-label flex-container">
+                        <label for="user-phone">Phone</label>
+                    </div>
+                    <div class="user-input flex-container">
+                        <input type="number" id="user-phone" />
                     </div>
                 </div>
 
@@ -138,13 +150,12 @@
 
         </form>
 
-        <!-- submit button to proceed to next page -->
-        <div id="next-page" class="next-button">
-            <a href="./src/page1.xhtml">
-                <button type="button">
-                    <img src="./img/next-icon.png" alt="next-icon-normal-3" id="next-submit-button"/>
-                </button>
-            </a>
+        <div id="next-page" class="next-button next-button-div flex-container">
+            <button type="button" class="next-button-button frost-bg flex-container" onclick="validateForm()">
+                <a href="./src/page1.html">
+                    <img src="./img/next-icon.png" id="next-submit-button" class="next-button-img">
+                </a>
+            </button>
         </div>
     </div>
 
