@@ -85,7 +85,7 @@ function getScore() {
 }
 
 function textMe() {
-    window.location.href="https://wa.me/+918407836969?text=Hi%20There";
+    window.location.href="https://www.instagram.com/preritvishal/";
 }
 
 function firstPage() {
