@@ -28,14 +28,14 @@
         <!-- first div which contains question -->
         <div id="first-screen" class="screen-div flex-group">
             <p id="question-text" class="flex-group frost-bg">
-                Q4. Choose the most appropriate option:
+                Q5. Choose the correct option:
             </p>
         </div>
 
         <!-- this div will contain the question explanation or the elemenet to identify -->
         <div id="second-screen" class="screen-div flex-group">
             <p id="question-element-display" class="flex-group frost-bg">
-                Most suitable type of input for recieveing password is:
+                What is the correct sequence of HTML tags for starting a webpage?
             </p>
         </div>
 
@@ -46,25 +46,25 @@
                 actual button with text as options -->
             <p id="answer-para-1" class="answer-para frost-bg">
                 <button type="button" id="answer-button-1" class="answer-button" onclick="incorrect()">
-                    &lt; input type="number">
+                    Head, Title, HTML
                 </button>
             </p>
 
             <p id="answer-para-2" class="answer-para frost-bg">
-                <button type="button" id="answer-button-2" class="answer-button" onclick="incorrect()">
-                    &lt; input type="text">
+                <button type="button" id="answer-button-2" class="answer-button" onclick="correct()">
+                    HTML, Head, Title
                 </button>
             </p>
 
             <p id="answer-para-3" class="answer-para frost-bg">
-                <button type="button" id="answer-button-3" class="answer-button" onclick="correct()">
-                    &lt; input type="password">
+                <button type="button" id="answer-button-3" class="answer-button" onclick="incorrect()">
+                    Title, Head, HTML
                 </button>
             </p>
 
             <p id="answer-para-4" class="answer-para frost-bg">
                 <button type="button" id="answer-button-4" class="answer-button" onclick="incorrect()">
-                    &lt; input type="encrypted">
+                    None
                 </button>
             </p>
 
@@ -79,7 +79,7 @@
                     Hint:
                 </p>
                 <p id="hint-para">
-                    Password is stored in encrypted way, not taken in.
+                    First, people see my head, and then ask me my title. Strange people!
                 </p>
             </div>
 

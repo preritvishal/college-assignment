@@ -35,7 +35,6 @@
         <!-- this div will contain the question explanation or the elemenet to identify -->
         <div id="second-screen" class="screen-div flex-group">
             <p id="question-element-display" class="flex-group frost-bg">
-               Correct Answer: 6, Incorrect Answer: 2, Unanswered: 2
             </p>
         </div>
 
@@ -45,19 +44,19 @@
             <!-- each button is wrapper under a paragaph, then comes the 
                 actual button with text as options -->
             <p id="answer-para-1" class="answer-para frost-bg">
-                <button type="button" id="answer-button-1" class="answer-button" onclick="incorrect()">
+                <button type="button" id="answer-button-1" class="answer-button" onclick="goBack()">
                     Retry
                 </button>
             </p>
 
             <p id="answer-para-2" class="answer-para frost-bg">
-                <button type="button" id="answer-button-2" class="answer-button" onclick="incorrect()">
-                    Submit
+                <button type="button" id="answer-button-2" class="answer-button" onclick="getScore()">
+                    Show Score
                 </button>
             </p>
 
             <p id="answer-para-3" class="answer-para frost-bg">
-                <button type="button" id="answer-button-3" class="answer-button" onclick="correct()">
+                <button type="button" id="answer-button-3" class="answer-button" onclick="textMe()">
                     text developer
                 </button>
             </p>

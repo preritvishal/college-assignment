@@ -56,7 +56,6 @@ function skipPage() {
 
 function nextPage(num) {
     if (num > 10) {
-        getScore();
         location.href = "./score.html";
     }
     else {
@@ -73,13 +72,15 @@ function rickroll() {
 
 // function to go back to first page
 function goBack() {
+    sessionStorage.setItem("correctAnswer",  0);
+    sessionStorage.setItem("incorrectAnswer", 0);
+    sessionStorage.setItem("unanswered", 0);
     window.location.href = "../index.html";
 }
 
 // inject the score to the score page
 function getScore() {
     let para = document.getElementById('question-element-display');
-    getLocalScore();
     para.innerHTML = "Correct Answer: " + correctAnswer + "&ThickSpace; Incorrect Answer: " + incorrectAnswer + "&ThickSpace; Unanswered: " + unanswered;
 }
 
