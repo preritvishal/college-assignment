@@ -89,5 +89,5 @@ function textMe() {
 }
 
 function firstPage() {
-    window.location.href = "./src/page1.html";
+    location.href = "./src/page1.html";
 }
