@@ -1,7 +1,3 @@
-// this function goes links the onclick attribute of butto
-//      to the page number provided
-//      page number must be in format
-//      regex to validate page name: "page\d+.xhtml"
 var correctAnswer = parseInt(sessionStorage.getItem("correctAnswer")) || 0;
 var incorrectAnswer = parseInt(sessionStorage.getItem("incorrectAnswer")) || 0;
 var unanswered = parseInt(sessionStorage.getItem("unanswered")) || 0;
@@ -13,6 +9,10 @@ function saveScore() {
     sessionStorage.setItem("unanswered", unanswered);
 }
 
+// this function goes links the onclick attribute of butto
+//      to the page number provided
+//      page number must be in format
+//      regex to validate page name: "page\d+.xhtml"
 function goToPage(num) {
     window.location.href = "page" + num + ".html";
 }
