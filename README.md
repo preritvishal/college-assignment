@@ -27,3 +27,14 @@ Hence, This project is made with collaboration of:
 To add anything to gitignore, simply add "depricated-" before it's file name, it will not be tracked
 
 Any page name starting with test will also not be tracked, as they will only be used by programmer from testing small pieces of code.
+
+Known issues
+	> Form doesn't work as no code is implemeneted for it
+
+	> index.html divs overflow, responsiveness requires optimization
+	
+	> page*.html divs overflows when resized to less 1800 X 2400 resolution
+	
+	> Options are alwyays in same order, they should be randomized
+	
+	> score.html should show score on page load, instead of button click
